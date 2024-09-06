@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SponserHire - Visa Sponsorship Jobs in the UK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>SponserHire</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Employers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Search Bar -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Find Your Dream Job with Visa Sponsorship</h2>
+            <p>Browse thousands of jobs in the UK that offer visa sponsorships</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search jobs..." id="job-search">
+                <button onclick="searchJobs()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs">
+        <h3>Featured Jobs</h3>
+        <div class="job-listings">
+            <div class="job-item">
+                <h4>Software Developer</h4>
+                <p>Company XYZ - London</p>
+                <a href="#">View Job</a>
+            </div>
+            <div class="job-item">
+                <h4>Project Manager</h4>
+                <p>Company ABC - Manchester</p>
+                <a href="#">View Job</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
