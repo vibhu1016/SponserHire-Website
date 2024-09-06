@@ -9,16 +9,18 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <h1>SponserHire</h1>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <div class="logo">
+                <h1>SponserHire</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Employers</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
     </nav>
 
     <!-- Hero Section with Search Bar -->
@@ -28,7 +30,7 @@
             <p>Browse thousands of jobs in the UK that offer visa sponsorships</p>
             <div class="search-bar">
                 <input type="text" placeholder="Search jobs..." id="job-search" onkeyup="filterJobs()">
-                <button onclick="filterJobs()">Search</button>
+                <button class="cta-accent" onclick="filterJobs()">Search</button>
             </div>
         </div>
     </section>
