@@ -27,8 +27,8 @@
             <h2>Find Your Dream Job with Visa Sponsorship</h2>
             <p>Browse thousands of jobs in the UK that offer visa sponsorships</p>
             <div class="search-bar">
-                <input type="text" placeholder="Search jobs..." id="job-search">
-                <button onclick="searchJobs()">Search</button>
+                <input type="text" placeholder="Search jobs..." id="job-search" onkeyup="filterJobs()">
+                <button onclick="filterJobs()">Search</button>
             </div>
         </div>
     </section>
@@ -36,7 +36,7 @@
     <!-- Featured Jobs Section -->
     <section class="featured-jobs">
         <h3>Featured Jobs</h3>
-        <div class="job-listings">
+        <div class="job-listings" id="job-listings">
             <div class="job-item">
                 <h4>Software Developer</h4>
                 <p>Company XYZ - London</p>
@@ -47,8 +47,35 @@
                 <p>Company ABC - Manchester</p>
                 <a href="#">View Job</a>
             </div>
+            <div class="job-item">
+                <h4>Data Analyst</h4>
+                <p>Company 123 - Birmingham</p>
+                <a href="#">View Job</a>
+            </div>
+            <div class="job-item">
+                <h4>Marketing Specialist</h4>
+                <p>Company 456 - Leeds</p>
+                <a href="#">View Job</a>
+            </div>
         </div>
     </section>
+
+    <!-- JavaScript for Job Search -->
+    <script>
+        function filterJobs() {
+            const searchValue = document.getElementById('job-search').value.toLowerCase();
+            const jobItems = document.getElementsByClassName('job-item');
+
+            for (let i = 0; i < jobItems.length; i++) {
+                let jobTitle = jobItems[i].getElementsByTagName('h4')[0].innerText.toLowerCase();
+                if (jobTitle.includes(searchValue)) {
+                    jobItems[i].style.display = "block";
+                } else {
+                    jobItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
